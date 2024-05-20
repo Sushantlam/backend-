@@ -26,7 +26,7 @@ async function sendVerifyMail(name, email, u_id){
                 from: 'sushantlama732@gmail.com',
                 to: email,
                 subject: 'For verification email',
-                html: '<p>Hello '+ name +' Please click here to <a href="http://localhost:5173/verify/'+ u_id+'"> Verify </a>at your mail </p>'
+                html: '<p>Hello '+ name +' Please click here to <a href="https://fullstack-frontend-green.vercel.app/verify/'+ u_id+'"> Verify </a>at your mail </p>'
      };
      transport.sendMail(mailOptions, function(error, info){
         if (error) {
